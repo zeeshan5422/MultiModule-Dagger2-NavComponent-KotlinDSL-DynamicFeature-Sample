@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <!--    <activity-->
+    <!--        android:id="@+id/mainActivity"-->
+    <!--        android:name="com.nfs.ascent.base.ui.MainActivity"-->
+    <!--        android:label="MainActivity" />-->
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.nfs.ascent.base.ui.MainFragment"
+        android:label="MainFragment">
+        <action
+            android:id="@+id/action_mainfragment_to_login_graph"
+            app:destination="@id/login_activity"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/app_nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <activity
+        android:id="@+id/login_activity"
+        android:name="com.nfs.ascent.nfslogin.ui.LoginActivity"
+        android:label="login_activity"
+        app:moduleName="nfslogin"
+        tools:layout="@layout/activity_login" />
+
+
+    <include-dynamic
+        android:id="@+id/nav_graph_dfm_nfslogin"
+        android:name="com.nfs.ascent.nfslogin"
+        app:graphResName="nav_graph_dfm_nfslogin"
+        app:moduleName="nfslogin" />
+
+    <include-dynamic
+        android:id="@+id/nav_graph_nfslogin"
+        android:name="com.nfs.ascent.nfslogin"
+        app:graphResName="nav_graph_nfslogin"
+        app:moduleName="nfslogin" />
+
+</navigation>

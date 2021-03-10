@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Nfs</string>
+    <string name="txt_force_relogin">Force ReLogin</string>
+    <string name="txt_change_url">Change Url</string>
+    <string name="txt_configuration">Configuration</string>
+    <string name="txt_please_wait">Please Wait</string>
+    <string name="txt_retry">Retry</string>
+    <string name="txt_error">Error</string>
+    <string name="txt_warning">Warning</string>
+    <string name="txt_exit">Exit</string>
+    <string name="txt_ok">OK</string>
+    <string name="txt_yes">Yes</string>
+    <string name="txt_no">No</string>
+    <string name="txt_save">Save</string>
+    <string name="txt_cancel">Cancel</string>
+    <string name="txt_time">Time</string>
+</resources>
